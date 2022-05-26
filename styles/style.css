@@ -1,0 +1,123 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+  background-image: url("https://source.unsplash.com/1920x1425/?landscape");
+  font-size: 115%;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.card {
+  background: #BF4E30;
+  padding: 2em;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  margin: 0.8em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 50px;
+  background-color: #121212bb;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: black;
+  color: #BF4E30;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  width: calc(100% - 100px);
+  font-family: inherit;
+  font-size: 120%;
+  background-color: #121212bb;
+  color: white;
+}
+
+.city {
+  margin-top: 0.8em;
+}
+
+.temp {
+  margin: 0;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 5px;
+}
+
+i.fa-brands {
+  font-size: 50px;
+  padding-top: 0.5em;
+  color: #121212bb;
+}
+
+i.fa-brands:hover {
+  color: black;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 100px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+/*# sourceMappingURL=style.css.map */
